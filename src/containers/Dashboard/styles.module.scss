@@ -1,5 +1,5 @@
 .root {
-    @apply text-[14px] bg-black;
+    @apply text-[14px] bg-black min-h-[100vh] flex flex-col justify-between;
 }
 
 .topbar {
