@@ -46,7 +46,7 @@ export const PROTOCOLS = [
     {
         Name: 'Ether.fi',
         Ticker: 'ETHFI',
-        URL: 'Ether.fi',
+        URL: 'https://ether.fi',
         Logo: EtherFi.src,
         TVL: '$6.993B',
         Volume: '$130.54M',
