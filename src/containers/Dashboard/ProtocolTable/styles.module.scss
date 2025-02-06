@@ -27,7 +27,7 @@
     }
 
     button {
-        transition: all 0.1 ease-in-out;
+        transition: all 0.1s ease-in-out;
         @apply px-2 py-1 hover:bg-primary-main/10 rounded-md;
     }
 }
@@ -82,7 +82,8 @@
         @apply relative;
 
         .ranking {
-            @apply flex items-center justify-center transition-transform;
+            @apply flex items-center justify-center;
+            transition: 0.2s all ease-in-out;
             position: absolute;
             top: -6px;
             left: -6px;
@@ -95,7 +96,7 @@
     }
 
     .link {
-        transition: all 0.2 ease-in-out;
+        transition: all 0.2s ease-in-out;
         @apply rounded-md border-primary-main border bg-primary-main/20 px-2 py-1;
         @apply hover:bg-primary-main/40 cursor-pointer;
 
