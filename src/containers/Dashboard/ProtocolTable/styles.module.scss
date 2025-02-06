@@ -1,0 +1,118 @@
+.table {
+    @apply border border-primary-main;
+}
+
+.tableHeader {
+    @apply py-4 px-4 flex items-center justify-between text-primary-main;
+    @apply border-b border-b-primary-main;
+    .tableHeaderLeft {
+        @apply flex items-center gap-2;
+        span {
+            @apply text-[18px];
+        }
+    }
+
+    .tableHeaderRight {
+        span {
+            @apply rounded-full bg-primary-main/10 px-2 py-1;
+            @apply text-[16px];
+        }
+    }
+}
+
+.tableActions {
+    @apply py-2 px-2 flex items-center gap-1 border-b border-b-primary-main/20;
+    .activeAction {
+        @apply hover:bg-primary-main bg-primary-main text-black;
+    }
+
+    button {
+        transition: all 0.1 ease-in-out;
+        @apply px-2 py-1 hover:bg-primary-main/10 rounded-md;
+    }
+}
+
+.tableBody {
+    @apply h-[500px] overflow-auto py-2;
+
+    /* Scrollbar for Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.7) transparent;
+
+    /* Webkit Scrollbar */
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #222, #444, #222);
+        border-radius: 6px;
+        border: 1px solid #555;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg, #333, #555, #333);
+    }
+}
+
+.protocolTableItem {
+    @apply px-4 py-4;
+    @apply flex md:justify-between items-center;
+    @apply flex-col md:flex-row justify-start;
+
+    & > div {
+        @apply w-full;
+    }
+
+    &:hover {
+        @apply bg-primary-main/5 cursor-pointer;
+
+        .protocolLogo {
+            .ranking {
+                transform: scale(1.14);
+            }
+        }
+    }
+
+    .protocolLogo {
+        @apply relative;
+
+        .ranking {
+            @apply flex items-center justify-center transition-transform;
+            position: absolute;
+            top: -6px;
+            left: -6px;
+            height: 35px;
+            width: 35px;
+            @apply text-primary-main;
+            @apply text-[12px];
+            @apply rounded-full border-primary-main border-4 bg-primary-dark;
+        }
+    }
+
+    .link {
+        transition: all 0.2 ease-in-out;
+        @apply rounded-md border-primary-main border bg-primary-main/20 px-2 py-1;
+        @apply hover:bg-primary-main/40 cursor-pointer;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    .stat {
+        @apply flex items-center gap-2;
+
+        h6 {
+            @apply text-primary-dark;
+        }
+        span {
+            @apply text-primary-main;
+            @apply font-bold text-[15px];
+        }
+    }
+}

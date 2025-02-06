@@ -1,0 +1,117 @@
+.root {
+    @apply text-[14px];
+}
+
+.topbar {
+    @apply flex py-3 border-b border-b-primary-main;
+}
+
+.topbarText {
+    @apply px-2 w-fit text-nowrap;
+    @apply text-primary-main text-[14px];
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.marqueeContent {
+    @apply flex items-center gap-6;
+    padding-left: 100%;
+    animation: marquee-scroll 20s linear infinite;
+
+    p {
+        @apply px-2 w-fit text-nowrap font-semibold;
+        @apply text-primary-main text-[14px];
+    }
+    span {
+        @apply text-[12px] font-light ml-2;
+    }
+}
+
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+.navbar {
+    @apply pt-2 pb-4 border-b border-b-primary-main/30;
+}
+
+.navbarContent {
+    @apply max-w-[1100px] m-auto;
+    @apply px-4 md:px-0;
+}
+
+.statusBar {
+    @apply flex items-center gap-2;
+    @apply p-1 border border-primary-main/10;
+
+    span {
+        @apply text-[12px] text-primary-main/70;
+    }
+}
+
+.navHeading {
+    @apply text-primary-main;
+    @apply flex flex-col md:flex-row gap-2 justify-between items-center;
+    @apply pt-4;
+
+    h1 {
+        @apply text-[24px] md:text-[40px];
+    }
+
+    button {
+        transition: all ease-in 0.1s;
+        @apply border border-primary-main/70 px-4 py-2;
+        @apply hover:bg-primary-main/20 hover:translate-y-[-2px] active:translate-y-0;
+    }
+}
+
+.content {
+    @apply max-w-[1200px] m-auto pb-10 px-4 md:px-0;
+}
+
+.search {
+    @apply pt-10 pb-8;
+    @apply flex flex-col items-center w-full md:w-[60%] m-auto;
+    span {
+        @apply w-full text-left text-primary-main/60 text-[12px] py-2;
+    }
+}
+
+.textfield {
+    @apply w-full py-2 px-2 flex gap-2 items-center;
+    @apply border border-primary-main;
+
+    input {
+        @apply h-[31px] bg-transparent focus:outline-none focus:ring-0;
+        @apply text-primary-main;
+        @apply placeholder-primary-main/40;
+        flex: 1;
+    }
+
+    button {
+        @apply px-7 py-1;
+        transition: all ease-in 0.1s;
+        @apply border border-primary-main/70;
+        @apply hover:bg-primary-main/20 hover:translate-y-[-1px] active:translate-y-0;
+    }
+}
+
+.columns {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+}
+
+.footer {
+    @apply py-2 flex items-center justify-center gap-2 border-t border-t-primary-main/30;
+    @apply text-primary-main/60;
+    @apply flex-col md:flex-row;
+}

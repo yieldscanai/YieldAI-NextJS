@@ -1,0 +1,154 @@
+.table {
+    @apply border border-primary-main;
+}
+
+.tableHeader {
+    @apply py-4 px-4 flex items-center justify-between text-primary-main;
+    @apply border-b border-b-primary-main;
+    .tableHeaderLeft {
+        @apply flex items-center gap-2;
+        span {
+            @apply text-[18px];
+        }
+    }
+
+    .tableHeaderRight {
+        span {
+            @apply rounded-full bg-primary-main/10 px-2 py-1;
+            @apply text-[16px];
+        }
+    }
+}
+
+.tableActions {
+    @apply py-2 px-2 flex items-center gap-1 border-b border-b-primary-main/20;
+    .activeAction {
+        @apply hover:bg-primary-main bg-primary-main text-black;
+    }
+
+    button {
+        transition: all 0.1 ease-in-out;
+        @apply px-2 py-1 hover:bg-primary-main/10 rounded-md;
+    }
+}
+
+.tableBody {
+    @apply h-[500px] overflow-auto py-2;
+
+    /* Scrollbar for Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.7) transparent;
+
+    /* Webkit Scrollbar */
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #222, #444, #222);
+        border-radius: 6px;
+        border: 1px solid #555;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg, #333, #555, #333);
+    }
+}
+
+.userTableItem {
+    @apply px-4 py-4;
+    @apply flex gap-2;
+
+    &:hover {
+        @apply bg-primary-main/5 cursor-pointer;
+
+        .rank {
+            transform: scale(1.08);
+        }
+    }
+
+    .rank {
+        height: 56px;
+        width: 56px;
+        @apply rounded-md bg-primary-dark/60 border-2 border-primary-main;
+        @apply text-primary-main text-[26px];
+        @apply flex items-center justify-center font-bold;
+    }
+
+    .content {
+        flex: 1;
+    }
+
+    .heading {
+        @apply flex flex-col md:flex-row justify-between md:items-center gap-2 md:gap-0;
+    }
+
+    .address {
+        transition: all 0.2 ease-in-out;
+        @apply rounded-md border-primary-main border bg-primary-main/20 px-2 py-1;
+        @apply hover:bg-primary-main/40 cursor-pointer;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    .followWallet {
+        transition: all 0.2 ease-in-out;
+        @apply ml-4;
+        @apply flex items-center gap-1;
+        @apply rounded-md border-primary-main border bg-primary-main/20 px-2 py-1;
+        @apply hover:bg-primary-main/40 cursor-pointer;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+
+    .trend {
+        @apply w-fit;
+        @apply bg-primary-main/5 rounded-full px-2 py-1 text-green-600 font-bold;
+    }
+
+    .userStats {
+        @apply grid grid-cols-1 md:grid-cols-3 py-4 gap-2;
+    }
+
+    .stat {
+        transition: all 0.2 ease-in-out;
+        @apply cursor-pointer;
+        @apply flex flex-col gap-1;
+        @apply border border-primary-main/10 rounded-md py-3 px-3;
+        @apply hover:border-primary-main/70 hover:bg-primary-main/5;
+
+        h6 {
+            @apply font-semibold text-[16px] text-primary-main;
+        }
+
+        h4 {
+            @apply font-bold text-[18px];
+        }
+
+        span {
+            @apply text-[11px] text-primary-main/40;
+        }
+    }
+
+    .transaction {
+        @apply flex items-center gap-2;
+    }
+
+    .txBtn {
+        transition: all 0.2 ease-in-out;
+        @apply rounded-md border-primary-main border bg-primary-main/20 px-2 py-1;
+        @apply hover:bg-primary-main/40 cursor-pointer;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}
