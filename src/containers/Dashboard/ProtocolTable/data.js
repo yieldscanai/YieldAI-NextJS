@@ -8,6 +8,16 @@ import Uniswap from '@/assets/logos/uniswap.png';
 
 export const PROTOCOLS = [
     {
+        Name: 'Jupiter',
+        Ticker: 'JUP',
+        URL: 'https://jup.ag/',
+        Logo: Jupiter.src,
+        TVL: '$2.667B',
+        Volume: '$255.21M',
+        Liq: 'N/A',
+        APY: '9.8%',
+    },
+    {
         Name: 'AAVE',
         Ticker: 'AAVE',
         URL: 'https://aave.com/https://cryptologos.cc/logos/aave-aave-logo.png',
@@ -15,6 +25,7 @@ export const PROTOCOLS = [
         TVL: '$20.1B',
         Volume: '$468M',
         Liq: 'N/A',
+        APY: '4.23%',
     },
     {
         Name: 'Uniswap',
@@ -24,6 +35,7 @@ export const PROTOCOLS = [
         TVL: '$5.032B',
         Volume: '$3.21B',
         Liq: '$59.45M',
+        APY: '5.6%',
     },
     {
         Name: 'Lido',
@@ -33,6 +45,7 @@ export const PROTOCOLS = [
         TVL: '$26.42B',
         Volume: '$293.78M',
         Liq: '$10.61M',
+        APY: '4.5%',
     },
     {
         Name: 'EigenLayer',
@@ -42,6 +55,7 @@ export const PROTOCOLS = [
         TVL: '$12.079B',
         Volume: '$106.06M',
         Liq: '$6.3M',
+        APY: '3.2%',
     },
     {
         Name: 'Ether.fi',
@@ -51,23 +65,16 @@ export const PROTOCOLS = [
         TVL: '$6.993B',
         Volume: '$130.54M',
         Liq: '$2.2M',
+        APY: '3.9%',
     },
     {
         Name: 'ethena',
-        Ticker: '$ETHENA',
+        Ticker: 'ETHENA',
         URL: 'https://ethena.fi/',
         Logo: Ethena.src,
         TVL: '$6.133B',
         Volume: '$295.19M',
         Liq: '$20.76M',
-    },
-    {
-        Name: 'Jupiter',
-        Ticker: 'JUP',
-        URL: 'https://jup.ag/',
-        Logo: Jupiter.src,
-        TVL: '$2.667B',
-        Volume: '$255.21M',
-        Liq: 'N/A',
+        APY: '6.7%',
     },
 ];

@@ -15,13 +15,13 @@ export default function Dashboard() {
                     <div className={styles.marquee}>
                         <div className={styles.marqueeContent}>
                             <p>
-                                🚀 Jupiter Yield has shot up $1bln <span>[5min ago]</span>
+                                🚀 Kamino Finance (SOL) 9.81% Supply | 12.6% Borrow <span>[5min ago]</span>
                             </p>
                             <p>
-                                🎉 A new platform BYOB just launched <span>[5min ago]</span>
+                                🎉 Jito (SOL) 9.7% APY <span>[6min ago]</span>
                             </p>
                             <p>
-                                🔒 A large deposit was just made on Jupiter <span>[5min ago]</span>
+                                🔒 A large deposit was just made on Marinade (11.48% APY) <span>[5min ago]</span>
                             </p>
                         </div>
                     </div>
@@ -33,7 +33,7 @@ export default function Dashboard() {
                             <span>Status: DEVELOPMENT | Network: Solana,Ethereum,Base</span>
                         </div>
                         <div className={styles.navHeading}>
-                            <h1>{`>`} Yield_AI_Explorer</h1>
+                            <h1>{`>`} Yield_Scan_AI_Assist</h1>
                             <WalletButton>[Connect Wallet]</WalletButton>
                         </div>
                     </div>

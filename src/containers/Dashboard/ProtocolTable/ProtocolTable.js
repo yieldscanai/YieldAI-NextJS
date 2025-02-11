@@ -45,7 +45,7 @@ export default function ProtocolTable() {
             </div>
             <div className={styles.tableBody}>
                 {PROTOCOLS.map((protocol, i) => {
-                    const { Name, Ticker, URL, Logo, TVL, Volume, Liq } = protocol;
+                    const { Name, Ticker, URL, APY, Logo, TVL, Volume, Liq } = protocol;
                     return (
                         <div key={i} className={styles.protocolTableItem}>
                             <div className="flex items-center gap-2">
@@ -69,7 +69,11 @@ export default function ProtocolTable() {
                                 </div>
                             </div>
                             <div className="flex flex-row items-start gap-2 md:flex-col md:items-end mt-4">
-                                <div>
+                                <div className="flex items-center gap-2">
+                                    <div className={styles.stat}>
+                                        <h6>APY:</h6>
+                                        <span>{APY}</span>
+                                    </div>
                                     <div className={styles.stat}>
                                         <h6>TVL:</h6>
                                         <span>{TVL}</span>
